@@ -6,24 +6,34 @@ import {
   Nav,
   Form,
   Button,
-  FormControl
+  FormControl,
+  Container
 
 } from "react-bootstrap"
-
+import "./App.css"
 const Navigator = () => {
   return (
-  <Navbar bg="dark" variant="dark">
+    <Container>
+    
+  <Navbar className="lg" bg="dark" variant="dark">
     <Navbar.Brand href="#home">RCB</Navbar.Brand>
-    <Nav className="mr-0">
+    {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
+  {/* <Navbar.Collapse id="basic-navbar-nav"> */}
+    <Nav >
       <Nav.Link href="#home">Home</Nav.Link>
       <Nav.Link href="#features">Features</Nav.Link>
       <Nav.Link href="#pricing">Pricing</Nav.Link>
     </Nav>
-    <Form style={{float:"right"}} inline>
-      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+    <Form className="lg" >
+      <div className="sm">
+      <FormControl type="text" placeholder="Search"  />
       <Button variant="outline-info">Search</Button>
+      </div>
     </Form>
+    {/* </Navbar.Collapse> */}
   </Navbar>
+ 
+  </Container>
   )
 }
 
@@ -31,7 +41,7 @@ function App() {
   return (
     <AppWrapper>
       {/* <Header> */}
-       <Navigator/>
+       <Navigator className="lg"/>
 
       {/* </Header> */}
       <Content>
@@ -65,7 +75,7 @@ background-color: #000000;
 color: #ffffff;
 text-align: center;
 height: 10%; 
-width: 85%; 
+width:100%;
 `;
 
 const Content = styled.div`
