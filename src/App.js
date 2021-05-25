@@ -37,6 +37,7 @@ const Navigator = () => {
   )
 }
 
+
 function App() {
   return (
     <AppWrapper>
