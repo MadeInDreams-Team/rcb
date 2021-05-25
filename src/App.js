@@ -13,6 +13,7 @@ import {
 const Navigator = () => {
   return (
   <Navbar bg="dark" variant="dark">
+     
     <Navbar.Brand href="#home">RCB</Navbar.Brand>
     <Nav className="mr-0">
       <Nav.Link href="#home">Home</Nav.Link>
@@ -20,12 +21,13 @@ const Navigator = () => {
       <Nav.Link href="#pricing">Pricing</Nav.Link>
     </Nav>
     <Form style={{float:"right"}} inline>
-      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+      <FormControl type="text" placeholder="Search" className="mr-sm-2" />     
       <Button variant="outline-info">Search</Button>
     </Form>
   </Navbar>
   )
 }
+
 
 function App() {
   return (
